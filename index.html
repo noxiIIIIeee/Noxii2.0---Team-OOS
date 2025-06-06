@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noxii2.0 - Team OOS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            padding: 2rem 0;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .logo {
+            font-size: 4rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .monkey-emoji {
+            font-size: 3rem;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+        }
+        
+        /* Navigation */
+        nav {
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .nav-button {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 1.2rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.4rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+        }
+        
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 1);
+        }
+        
+        .nav-button .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            overflow: hidden;
+        }
+        
+        .nav-button .icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .instagram-icon {
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            color: white;
+        }
+        
+        .youtube-icon {
+            background: #ff0000;
+            color: white;
+        }
+        
+        .discord-icon {
+            background: #5865f2;
+            color: white;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.8rem;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .nav-button {
+                font-size: 1.2rem;
+                padding: 1rem 1.5rem;
+            }
+        }
+        
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .monkey-emoji {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Noxii2.0</div>
+            <div class="subtitle">
+                Team OOS
+                <span class="monkey-emoji">🐵</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="nav-buttons">
+                <a href="https://www.instagram.com/noxii2.0/" target="_blank" class="nav-button">
+                    <div class="icon instagram-icon">
+                        <img src="Instagram_icon.png" alt="Instagram" />
+                    </div>
+                    Noxii2.0
+                </a>
+                <a href="https://www.youtube.com/@Noxiii2.0" target="_blank" class="nav-button">
+                    <div class="icon youtube-icon">
+                        <img src="Youtube_logo.png" alt="YouTube" />
+                    </div>
+                    Noxii2.0
+                </a>
+                <a href="https://discord.gg/eKth3NFP" target="_blank" class="nav-button">
+                    <div class="icon discord-icon">
+                        <img src="1000008588.jpg" alt="Discord" />
+                    </div>
+                    Discord Noxii2.0
+                </a>
+                <a href="https://discord.gg/BvAJZzYb" target="_blank" class="nav-button">
+                    <div class="icon discord-icon">
+                        <img src="1000011279.jpg" alt="Discord" />
+                    </div>
+                    Discord OOS
+                </a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
